@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contenido No Disponible</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .message {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        color: #666;
+        text-align: center;
+    }
+
+    .heart {
+        color: #ff3852;
+    }
+
+    /* Animation */
+    @keyframes heartbeat {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .heart {
+        animation: heartbeat 1s infinite;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">El contenido ya no está disponible</div>
+        <div class="subtitle">Ya Amaia lo vio una vez <span class="heart">&hearts;</span></div>
+    </div>
+</body>
+</html>
